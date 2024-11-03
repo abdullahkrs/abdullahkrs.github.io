@@ -14,9 +14,8 @@ const data = {
         { "platform": "github", "url": "https://github.com/abdullahkrs" }
     ],
     "languages": [
-        { "language": "English", "proficiency": "native" },
-        { "language": "Spanish", "proficiency": "fluent" },
-        { "language": "Italian", "proficiency": "fluent" }
+        { "language": "Arabic", "proficiency": "native" },
+        { "language": "English", "proficiency": "fluent" },
     ],
     "interests": ["Video games", "Finance", "Basketball", "Theatre"],
     "intro": {
