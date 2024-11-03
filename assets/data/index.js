@@ -25,7 +25,7 @@ const data = {
     "education": [
         { 
             "years": "2016", 
-            "title": "Bachelor of Science in Information and Communication", 
+            "title": "Bachelor of Science in Information and Communication engineering", 
             "institution": "University of Burimi, Oman", 
             "details": "CGPA: 3.75, Excellent grade" 
         },
