@@ -1,0 +1,209 @@
+﻿/* Base Styles */
+body {
+    font-family: 'Georgia', serif;
+    color: #000;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+#cv {
+    border: 1px solid #000; /* Added border around the main content */
+    padding: 20px;
+    margin: 20px; /* Added margin to separate the border from the page edges */
+}
+
+/* Header and Footer */
+header, footer {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+footer {
+    margin-top: 40px;
+    font-size: 12px;
+    color: #555;
+}
+
+/* Sections */
+section {
+    margin-bottom: 40px;
+    page-break-inside: avoid; /* Prevent page breaks inside sections */
+    page-break-before: auto;
+}
+
+    section h3 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        text-transform: uppercase;
+        border-bottom: 1px solid #aaa;
+        padding-bottom: 5px;
+        page-break-after: avoid; /* Prevent header from being separated from content */
+    }
+
+        section h3 i {
+            color: #16a085;
+            margin-right: 10px;
+        }
+
+/* Info Grid */
+.info-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+    .info-grid > div {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    .info-grid h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #2980b9;
+        text-decoration: underline;
+    }
+
+        .info-grid h4 i {
+            color: #16a085;
+            margin-right: 5px;
+        }
+
+    .info-grid ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .info-grid ul li {
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+            .info-grid ul li i {
+                color: #16a085;
+                margin-right: 5px;
+            }
+
+/* Content Items */
+.experience-item, .education-item, .project-item, .participation-item, .award-item, .course-item {
+    margin-bottom: 30px;
+    page-break-inside: avoid; /* Prevent items from splitting across pages */
+}
+
+    .experience-item h4, .education-item h4, .project-item h4, .participation-item h4, .award-item h4, .course-item h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+        color: #2c3e50;
+        font-weight: bold;
+    }
+
+    .experience-item p, .education-item p, .project-item p, .participation-item p, .award-item p, .course-item p {
+        margin-bottom: 5px;
+        line-height: 1.6;
+        font-size: 14px;
+        text-align: justify;
+    }
+
+        .experience-item p strong, .education-item p strong, .participation-item p strong, .award-item p strong {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+        .project-item p em, .course-item p em {
+            font-style: italic;
+            color: #16a085;
+        }
+
+/* Training Courses */
+#trainingCoursesList {
+    /* No specific styles needed for the list */
+}
+
+.course-item {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    position: relative;
+    page-break-inside: avoid; /* Prevent splitting across pages */
+}
+
+    .course-item::before {
+        content: "\f105"; /* Font Awesome 'angle-right' icon */
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: #000;
+    }
+
+    .course-item h4 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #2c3e50;
+        font-weight: bold;
+    }
+
+    .course-item p {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+        .course-item p strong {
+            font-weight: bold;
+            color: #2980b9;
+        }
+
+    .course-item a {
+        color: #16a085;
+        text-decoration: underline;
+        word-break: break-all; /* Ensure long URLs wrap to the next line */
+    }
+
+/* Typography Enhancements */
+h1, h2, h3, h4 {
+    font-family: 'Times New Roman', serif;
+}
+
+p, li {
+    font-family: 'Georgia', serif;
+}
+
+/* Print Adjustments */
+@media print {
+    body {
+        font-size: 12pt;
+    }
+
+    #cv {
+        border: none; /* Remove border when printing */
+        margin: 0;
+    }
+
+    /* Adjust page breaks */
+    section {
+        page-break-inside: avoid;
+        page-break-before: auto;
+    }
+
+        section h3 {
+            page-break-after: avoid;
+        }
+
+    /* Remove any background colors or images for better print quality */
+    body, header, section, footer {
+        background: none !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    /* Adjust image sizes for print */
+    .profile-img img {
+        width: 100px;
+    }
+
+    /* Remove margin and padding to fit content */
+    .container {
+        padding: 0;
+    }
+}

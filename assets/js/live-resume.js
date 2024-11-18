@@ -61,6 +61,15 @@ $('.hover-box').hover(
     }
 );
 
+function printCV() {
+    var printWindow = window.open('print.html', '_blank');
+
+    printWindow.onload = function () {
+        printWindow.focus();
+        printWindow.print();
+    };
+}
+
 function populateData(data) {
     // Profile Information
     $('.profile-name').text(data.profile.name);
@@ -72,7 +81,7 @@ function populateData(data) {
         <p>PHONE : ${data.profile.phone}</p>
         <p>MAIL : ${data.profile.email}</p>
         <p>Location : ${data.profile.location}</p>
-        <button onclick="window.print();" class="btn btn-download-cv btn-primary rounded-pill"> 
+        <button onclick="printCV();" class="btn btn-download-cv btn-primary rounded-pill"> 
             <img src="assets/images/download.svg" alt="download" class="btn-img">DOWNLOAD CV 
         </button>
     `);
