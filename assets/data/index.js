@@ -17,7 +17,7 @@ const data = {
         { "language": "Arabic", "proficiency": "native" },
         { "language": "English", "proficiency": "fluent" },
     ],
-    "interests": ["Video games", "Finance", "Basketball", "Theatre"],
+    "interests": ["Tech and Coding", "Artificial Intelligence", "Maps and Data", "Learning and Growing", "Problem Solving", "Innovation"],
     "intro": {
         "greeting": "Objective",
         "description": "I strongly believe in the unique power of technology to transform the world, and I always strive to leverage my skills and knowledge to contribute to this goal. With my university degree and practical experience, I possess both the theoretical and applied knowledge to support this transformation. My strong commitment to continuous learning and innovation always drives me to stay at the forefront of modern advancements, enabling me to achieve excellent results in rapidly changing work environments."
@@ -74,24 +74,139 @@ const data = {
     ],
     "projects": [
         {
-            "title": "Al Ain Geo AI",
-            "content": "Developed and managed AI-driven web-based solutions utilizing deep learning techniques, resulting in a 40% improvement in the accuracy of satellite image analysis.",
-            "subtitle": "Implemented feature detection and classification systems, which improved the identification of buildings and signboards by 35%. Led efforts to detect changes on the ground, enabling timely updates to urban infrastructure data."
+            "title": "GeoAI Platform",
+            "content": "Led the development of the GeoAI Platform, an integrated suite of AI-powered systems utilizing aerial, satellite, and 360° panoramic images. The platform includes modules for asset extraction, visual pollution detection, temporal change monitoring, base map feature extraction, traffic and guidance sign extraction, and AI-powered enhancement of aerial and satellite images, increasing their resolution up to four times.",
+            "subtitle": "Enhanced municipal services by improving asset management, urban planning, road safety, and providing higher-quality imagery for detailed analysis and mapping through advanced AI techniques and comprehensive geospatial analysis."
         },
         {
-            "title": "Smart Al Ain Dashboard Program",
-            "content": "Engineered a real-time data dashboard that reduced decision-making time by 50% for municipal operations.",
-            "subtitle": "The program allowed for more efficient management of city resources and supported rapid urban development."
+            "title": "Creation of 3D Building Database and Electronic Archiving",
+            "content": "Established a database detailing buildings in 3D and electronically archived plans and building permits for all buildings in Al Ain City, archiving 3,000,000 pages and drawing 61,573 buildings.",
+            "subtitle": "Enhanced accessibility to building information for planning and regulation."
         },
         {
-            "title": "Qasimati System",
-            "content": "Developed a proactive service dashboard for landowners, enhancing the transparency of land transaction statuses and reducing inquiry times by 20%.",
-            "subtitle": "Enabled real-time updates for landowners, improving their access to property transaction data."
+            "title": "Development of Building Health and Safety System",
+            "content": "Developed a building health and safety system in coordination with the Health and Safety Unit in Building Planning, exceeding 23,000 reports in the system.",
+            "subtitle": "Enhanced monitoring and compliance with health and safety regulations."
         },
         {
-            "title": "Field Inspection System",
-            "content": "Designed and deployed a dashboard for monitoring and documenting inspections, improving the accuracy of inspection reports by 30%.",
-            "subtitle": "This dashboard streamlined inspection processes and supported compliance with urban planning requirements."
+            "title": "Streamlining the Executive Plans Audit Service",
+            "content": "Streamlined the audit service for executive plans, reducing steps from 8 to 2, required documents from 7 to 1, and processing time from one month to 10 days.",
+            "subtitle": "Significantly improved efficiency in plan approval processes."
+        },
+        {
+            "title": "Development of Historical Image Viewer (IMS)",
+            "content": "Developed the IMS historical image viewer by collecting and publishing historical images from 1960 to 2022, making approximately 30,000 images (totaling around 40 terabytes) easily accessible via a user-friendly web platform.",
+            "subtitle": "Facilitated historical analysis and urban development studies without complex processing."
+        },
+        {
+            "title": "Development of Risk Analysis and Management System",
+            "content": "Developed a risk analysis and management system in coordination with the Risk Department at Al Ain Municipality, analyzing and processing 500 risks.",
+            "subtitle": "Improved risk mitigation strategies and organizational resilience."
+        },
+        {
+            "title": "Development of Tree Management and Monitoring System",
+            "content": "Designed and implemented a system to monitor and inventory trees managed by beautification contractors. The system successfully recorded and managed over 67,000 reports related to tree planting, maintenance, and health assessments, providing real-time insights into the status of urban forestry projects.",
+            "subtitle": "Enhanced oversight, quality control, and sustainability of urban beautification efforts through detailed monitoring of tree assets."
+        },
+        {
+            "title": "Development of Institutional Leadership System",
+            "content": "Developed the Institutional Leadership System at Al Ain Municipality to include 398 capabilities, 900 indicators, 39 departments, and 8 sectors.",
+            "subtitle": "Enhanced organizational performance tracking and management."
+        },
+        {
+            "title": "Development of Real-Time Synchronization System for Survey Visits and Requests",
+            "content": "Developed an instantaneous synchronization system for managing survey visits and requests, processing over 30,000 requests.",
+            "subtitle": "Improved efficiency and accuracy in survey operations."
+        },
+        {
+            "title": "Automation of Land Plot Coordinate Extraction",
+            "content": "Automated the extraction of land plot coordinates, reducing processing time from two working days to instantaneous delivery.",
+            "subtitle": "Significantly increased efficiency in providing land coordinate data."
+        },
+        {
+            "title": "Development of Geophysical Analysis Program",
+            "content": "Developed a geophysical analysis program for cross-sectional images to serve the Soil Engineering Department in the Urban Planning Sector.",
+            "subtitle": "Streamlined geophysical data analysis for better soil engineering insights."
+        },
+        {
+            "title": "Development of Automated Spatial Data Extraction Feature",
+            "content": "Developed a feature for extracting and automating spatial data.",
+            "subtitle": "Streamlined data processing and reduced manual effort."
+        },
+        {
+            "title": "Development of Aerial and Satellite Image Comparison Feature",
+            "content": "Developed a feature to compare aerial and satellite images over the years for lands and farms.",
+            "subtitle": "Enabled temporal analysis for change detection and planning."
+        },
+        {
+            "title": "Development of Inspection and Reporting System",
+            "content": "Developed an inspection, reporting, and inventory system in collaboration with Regulatory Management, exceeding 24,000 reports.",
+            "subtitle": "Improved regulatory compliance and enforcement efficiency."
+        },
+        {
+            "title": "Development of Community Needs Inventory System",
+            "content": "Developed a system to inventory community needs, recording 1,075 needs.",
+            "subtitle": "Facilitated responsive urban planning based on community input."
+        },
+        {
+            "title": "Optimization of Land Plot Plans Extraction and Sharing",
+            "content": "Developed a mechanism for extracting and sharing land plot plans, processing plans for 10,000 plots.",
+            "subtitle": "Enhanced accessibility and distribution of land information."
+        },
+        {
+            "title": "Development of 'Matar' System for Managing Reviewer Requests",
+            "content": "Developed the 'Matar' system for the General Manager's Office at Al Ain Municipality to manage reviewer requests, processing over 500 requests.",
+            "subtitle": "Streamlined administrative processes and improved response times."
+        },
+        {
+            "title": "Development of Geophysical Studies and Visits System",
+            "content": "Developed a system for geophysical studies and visits, totaling 2,500 studies and 900 visits.",
+            "subtitle": "Optimized geophysical research and field operations."
+        },
+        {
+            "title": "Development of Training Management System",
+            "content": "Developed a training management system, offering over 50 courses and workshops through the system.",
+            "subtitle": "Enhanced employee development and skill advancement opportunities."
+        },
+        {
+            "title": "Development of 'Zaheb' System for New Employee Data Processing",
+            "content": "Developed the 'Zaheb' system to process data for new employees, handling 209 requests.",
+            "subtitle": "Accelerated onboarding and data management for new staff."
+        },
+        {
+            "title": "Development of Community Visits Evaluation System",
+            "content": "Developed a system for community visits to evaluate facilities in Al Ain City, with 7,700 reports generated.",
+            "subtitle": "Improved public facility management based on community feedback."
+        },
+        {
+            "title": "Development of Maps Department Request Management System",
+            "content": "Developed a system to manage requests for the Maps Department.",
+            "subtitle": "Improved request tracking and service delivery for mapping needs."
+        },
+        {
+            "title": "Development of Souq Sabe' Reservations System",
+            "content": "Developed a reservation system for Souq Sabe' (Seventh Market).",
+            "subtitle": "Streamlined vendor reservations and market operations."
+        },
+        {
+            "title": "Development of RV Mobile Units Reservation System",
+            "content": "Developed a reservation system for mobile caravan units (RVs).",
+            "subtitle": "Facilitated the booking process for mobile service units."
+        },
+        {
+            "title": "Collaboration with Civil Entities for Updated Spatial Data",
+            "content": "Collaborated with civil entities like Statistics and Endowments to provide updated spatial data, ensuring efficient use in urban operations and planning.",
+            "subtitle": "Strengthened inter-agency cooperation and data sharing."
+        },
+        {
+            "title": "Classification of Geospatial Elements",
+            "content": "Classified and identified 450 different geospatial elements on the base map within the databases.",
+            "subtitle": "Improved the accuracy and comprehensiveness of geospatial data."
+        },
+        {
+            "title": "Inventory of Regulated and Unregulated Animal Farms",
+            "content": "Conducted an inventory of animal farms with contracts (regulated) and without contracts (unregulated) across various sectors of Al Ain Municipality.",
+            "subtitle": "Supported agricultural planning and regulatory compliance."
         }
     ],
     "trainingCourses": [
