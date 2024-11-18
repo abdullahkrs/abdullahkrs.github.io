@@ -117,6 +117,19 @@ document.addEventListener('DOMContentLoaded', () => {
         trainingCoursesList.appendChild(div);
     });
 
+    // Get the last modified date of the document
+    const lastModified = new Date(document.lastModified);
+
+    // Format as dd-mm-yyyy
+    const formattedLastModified = [
+        String(lastModified.getDate()).padStart(2, '0'), // dd
+        String(lastModified.getMonth() + 1).padStart(2, '0'), // mm
+        lastModified.getFullYear() // yyyy
+    ].join('-');
+
+    // Update the <span> with id="lastModified"
+    document.getElementById('lastModified').textContent = formattedLastModified;
+
     window.print();
 });
 window.addEventListener('afterprint', function () {
